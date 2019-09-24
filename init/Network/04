@@ -1,0 +1,1 @@
+netstat -nr | awk '/Internet/{print; getline; print; getline; print}' | awk -F" " '/default/{print $2}' | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[1-9][0-9]*'

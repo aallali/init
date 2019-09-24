@@ -1,0 +1,4 @@
+apt-get install at
+at now + 1 minute....
+ctrl + d
+at now + 1 minute -f script.sh
